@@ -1,0 +1,27 @@
+{
+  "name": "music-player",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Lucas Fry",
+    "email": "frenchfrysays.alt@gmail.com",
+    "url": "https://github.com/frenchfrysays3"
+  },
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "express": "^5.1.0",
+    "express-basic-auth": "^1.2.1"
+  },
+  "homepage": "https://github.com/frenchfrysays3/my-music-player",
+  "repository": {
+    "url": "git@github.com:frenchfrysays3/my-music-player.git",
+    "type": "git"
+  }
+}
