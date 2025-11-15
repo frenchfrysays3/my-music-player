@@ -4,6 +4,8 @@ import path from 'node:path';
 import expressBasicAuth from 'express-basic-auth';
 import config from './config.js';
 
+const auth = expressBasicAuth(config);
+
 chalk.default = chalk; // Create alias to chalk (chalk.default.green now refers to chalk.green instad of undefined)
 
 const app = express();
