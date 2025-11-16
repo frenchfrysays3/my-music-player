@@ -1,0 +1,118 @@
+body {
+    font-family: 'arial', sans-serif;
+    background-color: #80ffff;
+}
+
+footer p.footer {
+    background-color: #FFFFFF;
+    font-size: 10px;
+}
+
+#myAudioPlayer { /* completely hide audio elements */
+  display: none;
+}
+
+#album-art { /* target the album art element */
+  /* Set a specific size for the album art */
+  width: 150px;
+  height: 150px;
+
+  /* Ensures the image covers the area without distortion */
+  object-fit: cover; 
+
+  /* Adds a slight curve to the corners for a modern touch */
+  border-radius: 8px; 
+
+  /* Centers the image horizontally within its container */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Adds some space below the image before the song info */
+  margin-bottom: 15px; 
+
+  /* Optional: Add a subtle shadow to make it pop */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.audio-player-container {
+  text-align: center; /* Centers all inline elements inside the container */
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.control {
+  width: 50px;
+  height: 50px;
+}
+
+#song-title {
+  font-size: 30px;
+}
+
+#album-name {
+  font-size: 20px;
+}
+
+#artist-name {
+  font-size: 15px;
+}
+
+h1 { font-size: 50px; }
+p { font-size: 20px; }
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
