@@ -14,6 +14,10 @@ app.get('/', (req, res) => {
     res.status(200).sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
+app.get('/f-777', (req, res) => {
+    res.status(200).sendFile(path.join(__dirname, 'public', 'f-777.html'));
+});
+
 app.use(express.static('public', {
     redirect: false
 }));
